@@ -1,0 +1,58 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Cross-Origin-Opener-Policy = "same-origin"
+    Cross-Origin-Embedder-Policy = "require-corp"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https:; font-src 'self' https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://dataplug-gh.com;"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/*.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+  for = "/*.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[redirects]]
+  from = "/howto"
+  to = "/#howto"
+  status = 200
+
+[[redirects]]
+  from = "/blog"
+  to = "/#blog"
+  status = 200
+
+[[redirects]]
+  from = "/connect"
+  to = "/#connect"
+  status = 200
+
+[[redirects]]
+  from = "/pay"
+  to = "/#pay"
+  status = 200
+
+[[redirects]]
+  from = "/tutorials"
+  to = "/#howto"
+  status = 200

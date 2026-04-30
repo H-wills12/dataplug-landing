@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /cdn-cgi/
+
+Sitemap: https://dataplug-agent-9061.netlify.app/sitemap.xml
+
+Crawl-delay: 10
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10

@@ -1,0 +1,6 @@
+# Netlify Redirect Rules
+/howto       /#howto      200
+/blog        /#blog       200
+/connect     /#connect    200
+/pay         /#pay        200
+/tutorials   /#howto      200
