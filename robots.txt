@@ -3,4 +3,3 @@ Allow: /
 Disallow: /cdn-cgi/
 
 Sitemap: https://dataplug-agent-9061.netlify.app/sitemap.xml
-Crawl-delay: 10
