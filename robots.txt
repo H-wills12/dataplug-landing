@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /cdn-cgi/
 
-Sitemap: https://dataplug-agent-9061.netlify.app/sitemap.xml
+Sitemap: https://dataplug-gh.netlify.app/sitemap.xml
